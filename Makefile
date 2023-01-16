@@ -5,7 +5,7 @@ SRC_FILES := src/*.cpp
 
 EXEC := main.exe
 
-all: $(EXEC)
+all: bin/$(EXEC)
 	$(CPP) $(SRC_FILES) -o bin/$(EXEC) -O3 $(CPPFLAGS) $(LIBFLAGS)
 
 run:
